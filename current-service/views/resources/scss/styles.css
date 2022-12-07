@@ -1,0 +1,22 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  footer {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,40 @@
+{
+  "name": "current-service",
+  "version": "1.0.0",
+  "description": "My programming blog in Node.js.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "../../node_modules/.bin/nodemon --inspect server.js",
+    "create-env": "printenv > .env"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Aardzark",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^5.19.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.1.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.1",
+    "express-edge": "^2.0.2",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.3.0",
+    "mongoose-unique-validator": "^3.0.0",
+    "multer": "^1.4.4",
+    "multer-google-storage": "^1.3.0",
+    "nodemon": "^2.0.14",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0",
+    "startbootstrap-clean-blog": "^6.0.8",
+    "stream": "^0.0.2"
+  }
+}

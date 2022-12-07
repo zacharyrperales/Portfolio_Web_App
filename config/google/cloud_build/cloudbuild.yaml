@@ -1,0 +1,16 @@
+steps:
+  - name: node:16
+    entrypoint: npm
+    args: ['install']
+    dir: 'current-service'
+  - name: node:16
+    entrypoint: npm
+    args: ["run", "create-env"]
+    dir: 'current-service'
+    env:
+      - 'MONGO_DB_PASSWORD=${_MONGO_DB_PASSWORD}'
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["app", "deploy", "--appyaml=./config/build/google/app_engine/current-service.yaml"]
+    dir: 'current-service'
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: [ "app", "deploy", "dispatch.yaml" ]
