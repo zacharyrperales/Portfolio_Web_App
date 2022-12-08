@@ -8,11 +8,11 @@ Single-page Node.js and Bootstrap 5 application with a CI/CD pipeline from GitHu
 * Google Cloud Build with a Build Trigger, a GitHub hook, and YAML build files
 * Valid Google-issued SSL certifiicate
 * Google-issued domain
-## Back-End
+## Backend
 ### JavaScript
 * Node.js: Express
 * MongoDB: MongoDB Atlas (DEPRECATED)
-## Front-End
+## Frontend
 ### HTML, CSS, and JavaScript
 * Bootstrap 5
 * Dynamic Web Pages with Embedded JavaScript Templates (DEPRECATED)
