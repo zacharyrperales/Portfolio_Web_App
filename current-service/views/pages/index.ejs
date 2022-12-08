@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <style>
+        .title_black {
+            background: black;
+            font-family: "Comic Sans MS";
+            display:inline;
+            font-size: 180px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .title_blue {
+            background: blue;
+            font-family: "Comic Sans MS";
+            display:inline;
+            font-size: 180px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .title_red {
+            background: red;
+            font-family: "Comic Sans MS";
+            display:inline;
+            font-size: 180px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
         <%- include('../partials/head'); %>
         <title>NiiCode</title>
     </head>
@@ -13,10 +39,11 @@
                 <div class="col-lg-8 col-md-10 mx-auto text-center">
                     <br>
                     <br>
-                    <h1>Simple Single-Page Application</h1>
+                    <p class="title_black">N</p><p class="title_blue">i</p><p class="title_red">i</p><p class="title_black">Code</p>
                     <br>
                     <ul style="list-style: none;">
-                        <li>Hosting — Google Cloud Platform: App Engine, Cloud Build (YAML files), Cloud Trigger (GitHub Webhook)</li>
+                        <li>Single-Page Application</li>
+                        <li>Hosting — Google Cloud Platform: App Engine, Cloud Build w/ YAML, Cloud Trigger w/ GitHub Webhook</li>
                         <li>Frontend — Bootstrap 5: HTML, CSS, and JavaScript</li>
                         <li>Backend — Node.js: Express and JavaScript</li>
                     </ul>
