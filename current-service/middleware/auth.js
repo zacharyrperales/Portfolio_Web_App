@@ -1,4 +1,4 @@
-// DEPRECATED. KEPT FOR DEMONSTRATION PURPOSES.
+// OBSOLETE. KEPT FOR DEMONSTRATION PURPOSES.
 
 const User = require('../database/models/User');
 

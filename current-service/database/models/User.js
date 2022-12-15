@@ -1,4 +1,4 @@
-// DEPRECATED. KEPT FOR DEMONSTRATION PURPOSES.
+// OBSOLETE. KEPT FOR DEMONSTRATION PURPOSES.
 
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
