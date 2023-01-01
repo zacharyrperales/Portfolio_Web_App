@@ -8,27 +8,17 @@
     <header>
         <%- include('../partials/header'); %>
     </header>
-    <body style="height: 100vh">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto text-center">
-                    <br>
-                    <h1>Single-Page Application</h1>
-                    <br>
-                    <br>
-                    <ul style="list-style: none;">
-                        <li>Hosting — Google Cloud Platform: App Engine, Cloud Build w/ YAML, Cloud Trigger w/ GitHub Webhook</li>
-                        <br>
-                        <li>Frontend — Bootstrap 5: HTML, CSS, and JavaScript</li>
-                        <br>
-                        <li>Backend — Node.js: Express and JavaScript</li>
-                    </ul>
-                </div>
+    <body>
+        <div class="d-flex justify-content-center" style="margin-top:5px">
+            <div>
+                <object data="https://docs.google.com/gview?embedded=true&url=https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyRomePeralesResume.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
+            </div>
+            <div>
+                <object data="https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyPeralesPhoto.jpg" style="height:100vh;width:100%"></object>
             </div>
         </div>
-        <%- include('../partials/body'); %>
     </body>
-    <hr>
+    <hr style="margin:0px">
     <footer>
         <%- include('../partials/footer'); %>
     </footer>
