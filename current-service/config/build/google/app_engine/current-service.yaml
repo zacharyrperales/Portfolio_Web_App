@@ -1,2 +1,6 @@
 runtime: nodejs16
 service: default
+handlers:
+- url: /.*
+  secure: always
+  script: auto
