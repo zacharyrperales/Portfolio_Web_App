@@ -1,1 +1,1 @@
-./current-service/views/*.ejs linguist-detectable=false
+current-service/views/*.ejs linguist-detectable=false
