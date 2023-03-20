@@ -9,12 +9,23 @@
     <%- include('../partials/header'); %>
 </header>
 <body>
-<div class="container-fluid d-flex flex-wrap">
+<div class="container-fluid d-flex flex-wrap justify-content-center">
     <object class="col-sm-12 col-md-8 my-1 align-self-stretch" data="https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyPeralesResume.pdf" type="application/pdf"></object>
-    <object class="col-sm-12 col-md-4 mb-1 mt-md-1 portrait" data="https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyPeralesPhoto.jpg"></object>
+    <object class="col-sm-12 col-md-3 mb-1 mt-md-1 portrait" data="https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyPeralesPhoto.jpg"></object>
     <iframe class="tidal" src="https://embed.tidal.com/playlists/076e93ae-4798-4503-a9ce-4cdadf320d13?layout=playlist?autoplay=1"></iframe>
 </div>
 <style>
+    @media (min-width: 0px) {
+        .tidal {
+            width: 100%;
+            height: 400px;
+            min-height: 100%;
+        }
+        .portrait {
+            max-width: 100%;
+        }
+    }
+
     @media (max-width: 767.98px) {
         .align-self-stretch {
             height: 500px;
@@ -22,14 +33,13 @@
             max-width: none;
         }
     }
-    @media (min-width: 575.98px) {
-        .portrait {
-            max-width: 100%;
-        }
+
+    @media (min-width: 768px) {
         .tidal {
-            width: 100%;
-            height: 400px;
-            min-height: 100%;
+            width: 92%;
+        }
+        object:nth-of-type(2) {
+            margin-left: 4px;
         }
     }
 </style>
