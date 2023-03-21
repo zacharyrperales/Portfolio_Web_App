@@ -7,7 +7,7 @@ const { PORT } =        require('./config/build/config.js');
 const app = express();
 
 app.use(express.static(path.join(__dirname, "/views/resources/favicon")));
-app.use(express.static(path.join(__dirname, "/views/resources/scss")));
+// app.use(express.static(path.join(__dirname, "/views/resources/css")));
 
 app.set('view engine', 'ejs');
 
