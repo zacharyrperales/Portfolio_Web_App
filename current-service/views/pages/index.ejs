@@ -3,48 +3,50 @@
 <head>
     <%- include('../partials/head'); %>
     <title>NiiCode</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- remove link to style.css -->
 </head>
 <header>
     <%- include('../partials/header'); %>
 </header>
 <body>
 <div class="container-fluid d-flex flex-wrap justify-content-center">
-    <object class="col-sm-12 col-md-8 my-1 align-self-stretch" data="https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyPeralesResume.pdf" type="application/pdf"></object>
-    <object class="col-sm-12 col-md-3 mb-1 mt-md-1 portrait" data="https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyPeralesPhoto.jpg"></object>
-    <iframe class="tidal" src="https://embed.tidal.com/playlists/076e93ae-4798-4503-a9ce-4cdadf320d13?layout=playlist?autoplay=1"></iframe>
+    <div class="col-11 col-md-8 my-1 embed-responsive-16by9">
+        <object class="embed-responsive-item w-100 h-100 doc" data="https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyPeralesResume.pdf" type="application/pdf"></object>
+    </div>
+    <object class="col-11 col-md-3 mb-1 mt-md-1 portrait" data="https://storage.googleapis.com/zachary-portfolio-blog.appspot.com/ZacharyPeralesPhoto.jpg"></object>
+    <div class="col-11 custom-width embed-responsive">
+        <iframe class="embed-responsive-item item w-100 tidal" src="https://embed.tidal.com/playlists/076e93ae-4798-4503-a9ce-4cdadf320d13?layout=playlist&amp;autoplay=1"></iframe>
+    </div>
+
 </div>
 <style>
-    @media (min-width: 0px) {
-        .tidal {
-            width: 100%;
-            height: 400px;
-            min-height: 100%;
-        }
-        .portrait {
-            max-width: 100%;
-        }
+    .tidal {
+        min-height: 400px;
+    }
+
+    .portrait {
+        max-width: 100%;
     }
 
     @media (max-width: 767.98px) {
-        .align-self-stretch {
-            height: 500px;
-            width: 100%;
-            max-width: none;
+        .doc {
+            min-height: 355px;
         }
     }
 
     @media (min-width: 768px) {
-        .tidal {
-            width: 92%;
-        }
-        object:nth-of-type(2) {
+        .portrait {
             margin-left: 4px;
+        }
+        .col-11.custom-width {
+            width: calc(91.666666667% + 4px);
+            max-width: calc(91.666666667% + 4px);
         }
     }
 </style>
 <%- include('../partials/body'); %>
 </body>
-<hr style="margin:4px">
+<!-- move hr after footer -->
+<hr style="margin-bottom:4px; margin-top:0px">
 <%- include('../partials/footer'); %>
 </html>
