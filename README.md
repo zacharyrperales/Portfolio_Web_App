@@ -11,8 +11,7 @@ Single-page Node.js and Bootstrap 5 application with a CI/CD pipeline from GitHu
 ## Backend
 ### JavaScript
 * Node.js: Express
-* MongoDB: MongoDB Atlas (OBSOLETE)
 ## Frontend
 ### HTML, CSS, and JavaScript
 * Bootstrap 5
-* Dynamic Web Pages with Embedded JavaScript Templates (OBSOLETE)
+* Dynamic Web Pages with Embedded JavaScript Templates
