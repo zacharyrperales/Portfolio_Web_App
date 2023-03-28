@@ -27,7 +27,7 @@
     "express-edge": "^2.0.2",
     "express-fileupload": "^1.2.1",
     "express-session": "^1.17.2",
-    "github-api": "~latest",
+    "github-api": "^3.4.0",
     "mongoose": "^6.3.0",
     "mongoose-unique-validator": "^3.0.0",
     "multer": "^1.4.4",
