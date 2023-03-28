@@ -7,9 +7,9 @@ steps:
     entrypoint: npm
     args: ["run", "create-env"]
     dir: 'current-service'
-    # env:
-      # - 'GITHUB_USERNAME=${_GITHUB_USERNAME}'
-      # - 'GITHUB_AUTH_TOKEN=${_GITHUB_AUTH_TOKEN}'
+    env:
+      - 'GITHUB_USERNAME=${_GITHUB_USERNAME}'
+      - 'GITHUB_TOKEN=${_GITHUB_TOKEN}'
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy", "--appyaml=./config/build/google/app_engine/current-service.yaml"]
     dir: 'current-service'
