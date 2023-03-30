@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, "/views/resources/favicon")));
 app.set('view engine', 'ejs');
 
 app.get('/', indexController.getHomePage);
+app.get('/testing', githubController.getGitHubPage)
 
 // Start the server
 app.listen(PORT, () => {
