@@ -1,17 +1,18 @@
-# Web Application
-Single-page Node.js and Bootstrap 5 application with a CI/CD pipeline from GitHub to Google Cloud Platform.
-
+# Portfolio Web Application
+Computer Science / Developer portfolio web application with a CI/CD pipeline from GitHub to Google Cloud Platform. Consists of resume, portrait, music playlist, and a dynamic up-to-date list of the user's recent GitHub projects.
 ## Hosting
 ### Google Cloud Platform
-* [Live-Testing v0.0.2](https://www.niicode.com)
 * App Engine
-* Google Cloud Build with a Build Trigger, a GitHub hook, and YAML build files
-* Valid Google-issued SSL certificate
-* Google-issued domain
+* Cloud Build
+* Cloud Triggers
+* SSL Certificate
+* Domain
 ## Backend
 ### JavaScript
 * Node.js: Express
 ## Frontend
-### HTML, CSS, and JavaScript
-* Bootstrap 5
-* Dynamic Web Pages with Embedded JavaScript Templates
+### HTML
+### CSS
+* Bootstrap 5 Framework
+### JavaScript
+* Embedded Dynamic JavaScript (EJS): Templating
