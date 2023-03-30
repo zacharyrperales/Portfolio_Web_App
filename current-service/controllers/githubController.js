@@ -7,7 +7,9 @@ const gitHub = new GitHub({
 });
 
 const getGitHubPage = async (req, res) => {
-    res.render("pages/testing.ejs");
+
+    const username = gitHub.getUser().__auth.username;
+    res.render("pages/testing.ejs", {username: username} );
 }
 
 module.exports = {

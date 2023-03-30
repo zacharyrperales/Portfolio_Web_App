@@ -12,12 +12,12 @@ app.use(express.static(path.join(__dirname, "/views/resources/favicon")));
 // app.use(express.static(path.join(__dirname, "/views/resources/css")));
 
 // Test GitHub API connection
-// console.log(githubController.github.getUser());
-
+console.log(githubController.gitHub.getUser());
+app.locals.gitHub = githubController.github;
 app.set('view engine', 'ejs');
 
 app.get('/', indexController.getHomePage);
-app.get('/testing', githubController.getGitHubPage)
+app.get('/testing', githubController.getGitHubPage);
 
 // Start the server
 app.listen(PORT, () => {
